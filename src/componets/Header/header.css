@@ -1,0 +1,57 @@
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 90px;
+}
+
+.logo {
+    color: #224f34;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigate {
+    display: flex;
+    gap: 57px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #224f34;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.login {
+    padding: 11px 41px;
+    background-color: transparent;
+    border: 2px solid #224f34;
+    border-radius: 3px;
+    color: #224f34;
+    text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+    .main_header {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 24px;
+        padding-bottom: 48px;
+    }
+
+    .navigate {
+        order: 1;
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .login {
+        padding: 9px 22px;
+    }
+}
